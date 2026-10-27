@@ -46,9 +46,7 @@ sudo make install PG_CONFIG=/usr/ivory-5/bin/pg_config PGVER=pg18
 ----
 
 [TIP]
-If an error reports that xlocale.h cannot be found, manually edit /usr/ivory-5/include/postgresql/server/pg_config.h and delete or comment out the following line:
-
-#define HAVE_XLOCALE_H 1
+If an error reports that xlocale.h cannot be found, manually edit /usr/ivory-5/include/postgresql/server/pg_config.h and delete or comment out the following line: #define HAVE_XLOCALE_H 1
 
 == Creating the Extension
 Connect to the database with psql and run the following commands:
